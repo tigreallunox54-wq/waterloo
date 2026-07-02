@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Bodoni Moda", serif;
+  --font-body: "Work Sans", sans-serif;
+
+  --color-ink: #14100D;
+  --color-ink-soft: #1C1712;
+  --color-bottle: #1B3A2F;
+  --color-bottle-deep: #0E211A;
+  --color-bottle-mid: #25473A;
+  --color-brass: #B08D57;
+  --color-brass-light: #D9C08F;
+  --color-oxblood: #6B1F2A;
+  --color-cream: #F1EAD9;
+  --color-stone: #ECE6D8;
+  --color-stone-dim: #C9C0AC;
+
+  --animate-marquee: marquee 32s linear infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-ink);
+  color: var(--color-stone);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-brass);
+  color: var(--color-ink);
+}
+
+/* thin brass scrollbar */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: var(--color-ink); }
+::-webkit-scrollbar-thumb { background: var(--color-brass); border-radius: 999px; }
