@@ -9,9 +9,7 @@
     "lint": "oxlint",
     "preview": "vite preview"
   },
-  "engines": {
-    "node": "22.x"
-  },
+
   "dependencies": {
     "framer-motion": "^12.42.2",
     "lucide-react": "^1.23.0",
