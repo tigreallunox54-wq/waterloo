@@ -1,6 +1,8 @@
 import { motion, type Variants } from "framer-motion";
 import { venue } from "../data/content";
 
+// build
+
 const container: Variants = {
   hidden: {},
   show: {
@@ -43,7 +45,7 @@ export default function Hero() {
 
       <motion.div
         variants={container}
-        initial="hidden"
+        initial="hidden" 
         animate="show"
         className="relative z-2 w-full pb-24 pt-10 md:pb-28"
       >
